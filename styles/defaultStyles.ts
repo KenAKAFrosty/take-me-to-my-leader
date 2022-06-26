@@ -11,4 +11,4 @@ export const defaultMainContainer: CSSProperties = {
     flexGrow: 1,
     display:"flex",
     alignItems: "center"
-}
+} 

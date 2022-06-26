@@ -6,8 +6,6 @@ import { defaultMainContainer, defaultPageContainer } from '../styles/defaultSty
 
 export default function Home() {
 
-
-
   return (
     <div style={defaultPageContainer}>
       <Head>
@@ -15,28 +13,14 @@ export default function Home() {
         <meta name="description" content="The fastest path to participating in democracy" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      
       <Header />
-
 
       <main style={defaultMainContainer}>
 
-        <h1 style={{
-          textAlign: "center",
-          width: "100%",
-          margin: 0,
-          padding: 10,
-          lineHeight: 1.15,
-          fontSize: "calc(16px + 5vw)",
-          color: "rgba(0,0,0,0.82)",
-        }}>
-          {`The fastest path to participating in democracy`}
-        </h1>
-
       </main>
-
-
-      <Footer />
+    
+        <Footer />
     </div>
   )
 }
