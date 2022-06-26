@@ -1,12 +1,23 @@
+import { GetServerSidePropsContext } from 'next';
 import Head from 'next/head'
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { defaultMainContainer, defaultPageContainer } from '../styles/defaultStyles';
 
+export async function getServerSideProps(context: GetServerSidePropsContext) {
+  const request = context.req;
+  const forwarded = request.headers["x-forwarded-for"];
+  const ip = forwarded || request.connection.remoteAddress;
+  console.log(ip);
 
-export default function Home() {
+  return {
+    props: { ip }
+  }
+}
 
 
+export default function Home({ ip }: { ip: string }) {
+  console.log('Server says ip is ', ip)
 
   return (
     <div style={defaultPageContainer}>
@@ -35,8 +46,8 @@ export default function Home() {
 
       </main>
 
-
       <Footer />
+
     </div>
   )
 }

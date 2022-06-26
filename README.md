@@ -17,4 +17,6 @@
 
 #### Additional:
 - Guiding/helping choose which leader is most appropriate for which issue. Probably questionnaire/chatbot style. Just get the general theme of the issue they want to communicate about, then choose proper leader accordingly
+- Little sliding notifications out of the main viewing area for when someone else clicks their button, e.g., "Someone in Detroit, MI just contacted one of their leaders!"
+- Maybe even long term stats over time. Simple stuff just like "here's how many people in your state have used this just this week". that kind of thing
 - More to come
