@@ -4,7 +4,7 @@ export const defaultPageContainer: CSSProperties = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    minHeight: "100vh"
+    minHeight: "99.9vh"
 }
 
 export const defaultMainContainer: CSSProperties = {
