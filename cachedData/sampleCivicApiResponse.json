@@ -1,0 +1,1232 @@
+{
+  "normalizedInput": {
+    "line1": "",
+    "city": "Valrico",
+    "state": "FL",
+    "zip": "33594"
+  },
+  "kind": "civicinfo#representativeInfoResponse",
+  "divisions": {
+    "ocd-division/country:us": {
+      "name": "United States",
+      "officeIndices": [
+        0,
+        1
+      ]
+    },
+    "ocd-division/country:us/state:fl/cd:15": {
+      "name": "Florida's 15th congressional district",
+      "officeIndices": [
+        3
+      ]
+    },
+    "ocd-division/country:us/state:fl": {
+      "name": "Florida",
+      "officeIndices": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "ocd-division/country:us/state:fl/county:hillsborough": {
+      "name": "Hillsborough County",
+      "officeIndices": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  },
+  "offices": [
+    {
+      "name": "President of the United States",
+      "divisionId": "ocd-division/country:us",
+      "levels": [
+        "country"
+      ],
+      "roles": [
+        "headOfGovernment",
+        "headOfState"
+      ],
+      "officialIndices": [
+        0
+      ]
+    },
+    {
+      "name": "Vice President of the United States",
+      "divisionId": "ocd-division/country:us",
+      "levels": [
+        "country"
+      ],
+      "roles": [
+        "deputyHeadOfGovernment"
+      ],
+      "officialIndices": [
+        1
+      ]
+    },
+    {
+      "name": "U.S. Senator",
+      "divisionId": "ocd-division/country:us/state:fl",
+      "levels": [
+        "country"
+      ],
+      "roles": [
+        "legislatorUpperBody"
+      ],
+      "officialIndices": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "U.S. Representative",
+      "divisionId": "ocd-division/country:us/state:fl/cd:15",
+      "levels": [
+        "country"
+      ],
+      "roles": [
+        "legislatorLowerBody"
+      ],
+      "officialIndices": [
+        4
+      ]
+    },
+    {
+      "name": "Governor of Florida",
+      "divisionId": "ocd-division/country:us/state:fl",
+      "levels": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "headOfGovernment"
+      ],
+      "officialIndices": [
+        5
+      ]
+    },
+    {
+      "name": "Lieutenant Governor of Florida",
+      "divisionId": "ocd-division/country:us/state:fl",
+      "levels": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "deputyHeadOfGovernment"
+      ],
+      "officialIndices": [
+        6
+      ]
+    },
+    {
+      "name": "FL State Commissioner of Agriculture",
+      "divisionId": "ocd-division/country:us/state:fl",
+      "levels": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "officialIndices": [
+        7
+      ]
+    },
+    {
+      "name": "FL State Chief Financial Officer",
+      "divisionId": "ocd-division/country:us/state:fl",
+      "levels": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "officialIndices": [
+        8
+      ]
+    },
+    {
+      "name": "FL State Attorney General",
+      "divisionId": "ocd-division/country:us/state:fl",
+      "levels": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "officialIndices": [
+        9
+      ]
+    },
+    {
+      "name": "FL State Supreme Court Justice",
+      "divisionId": "ocd-division/country:us/state:fl",
+      "levels": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "judge"
+      ],
+      "officialIndices": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "name": "Hillsborough County Property Appraiser",
+      "divisionId": "ocd-division/country:us/state:fl/county:hillsborough",
+      "levels": [
+        "administrativeArea2"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "officialIndices": [
+        17
+      ]
+    },
+    {
+      "name": "Hillsborough County Clerk of Courts",
+      "divisionId": "ocd-division/country:us/state:fl/county:hillsborough",
+      "levels": [
+        "administrativeArea2"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "officialIndices": [
+        18
+      ]
+    },
+    {
+      "name": "Hillsborough County Sheriff",
+      "divisionId": "ocd-division/country:us/state:fl/county:hillsborough",
+      "levels": [
+        "administrativeArea2"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "officialIndices": [
+        19
+      ]
+    },
+    {
+      "name": "Hillsborough County Tax Collector",
+      "divisionId": "ocd-division/country:us/state:fl/county:hillsborough",
+      "levels": [
+        "administrativeArea2"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "officialIndices": [
+        20
+      ]
+    },
+    {
+      "name": "Hillsborough County Supervisor of Elections",
+      "divisionId": "ocd-division/country:us/state:fl/county:hillsborough",
+      "levels": [
+        "administrativeArea2"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "officialIndices": [
+        21
+      ]
+    },
+    {
+      "name": "Hillsborough County Commissioner",
+      "divisionId": "ocd-division/country:us/state:fl/county:hillsborough",
+      "levels": [
+        "administrativeArea2"
+      ],
+      "roles": [
+        "legislatorLowerBody"
+      ],
+      "officialIndices": [
+        22,
+        23,
+        24
+      ]
+    }
+  ],
+  "officials": [
+    {
+      "name": "Joseph R. Biden",
+      "address": [
+        {
+          "line1": "1600 Pennsylvania Avenue Northwest",
+          "city": "Washington",
+          "state": "DC",
+          "zip": "20500"
+        }
+      ],
+      "party": "Democratic Party",
+      "phones": [
+        "(202) 456-1111"
+      ],
+      "urls": [
+        "https://www.whitehouse.gov/",
+        "https://en.wikipedia.org/wiki/Joe_Biden"
+      ],
+      "channels": [
+        {
+          "type": "Twitter",
+          "id": "potus"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "The White House 1600 Pennsylvania Avenue NW Washington, DC 20500",
+          "featureId": {
+            "cellId": "9923602325795527449",
+            "fprint": "11513381022022344111"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 126.14545494347092,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Kamala D. Harris",
+      "address": [
+        {
+          "line1": "1600 Pennsylvania Avenue Northwest",
+          "city": "Washington",
+          "state": "DC",
+          "zip": "20500"
+        }
+      ],
+      "party": "Democratic Party",
+      "phones": [
+        "(202) 456-1111"
+      ],
+      "urls": [
+        "https://www.whitehouse.gov/",
+        "https://en.wikipedia.org/wiki/Kamala_Harris"
+      ],
+      "channels": [
+        {
+          "type": "Twitter",
+          "id": "VP"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "The White House 1600 Pennsylvania Avenue NW Washington, DC 20500",
+          "featureId": {
+            "cellId": "9923602325795527449",
+            "fprint": "11513381022022344111"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 126.14545494347092,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Marco Rubio",
+      "address": [
+        {
+          "line1": "284 Russell Senate Office Building",
+          "city": "Washington",
+          "state": "DC",
+          "zip": "20510"
+        }
+      ],
+      "party": "Republican Party",
+      "phones": [
+        "(202) 224-3041"
+      ],
+      "urls": [
+        "https://www.rubio.senate.gov/",
+        "https://en.wikipedia.org/wiki/Marco_Rubio"
+      ],
+      "photoUrl": "http://bioguide.congress.gov/bioguide/photo/R/R000595.jpg",
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "SenatorMarcoRubio"
+        },
+        {
+          "type": "Twitter",
+          "id": "SenRubioPress"
+        },
+        {
+          "type": "YouTube",
+          "id": "SenatorMarcoRubio"
+        },
+        {
+          "type": "YouTube",
+          "id": "MarcoRubio"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "284 Russell Senate Office Building, Washington DC 20510",
+          "featureId": {
+            "cellId": "9923602788030889819",
+            "fprint": "10583716920507044407"
+          },
+          "featureType": "typeGeocodedAddress",
+          "positionPrecisionMeters": 0,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Rick Scott",
+      "address": [
+        {
+          "line1": "716 Hart Senate Office Building",
+          "city": "Washington",
+          "state": "DC",
+          "zip": "20510"
+        }
+      ],
+      "party": "Republican Party",
+      "phones": [
+        "(202) 224-5274"
+      ],
+      "urls": [
+        "https://www.rickscott.senate.gov/",
+        "https://en.wikipedia.org/wiki/Rick_Scott"
+      ],
+      "photoUrl": "http://www.flgov.com/wp-content/uploads/2013/05/GovernorNEW-682x1024.jpg",
+      "emails": [
+        "Rick.scott@eog.myflorida.com"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "RickScottSenOffice"
+        },
+        {
+          "type": "Twitter",
+          "id": "SenRickScott"
+        },
+        {
+          "type": "YouTube",
+          "id": "scottforflorida"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "716 Hart Senate Office Building, Washington DC 20510",
+          "featureId": {
+            "cellId": "9923602661160726555",
+            "fprint": "13491012159388313795"
+          },
+          "featureType": "typePostalCode",
+          "positionPrecisionMeters": 500,
+          "addressUnderstood": false
+        }
+      ]
+    },
+    {
+      "name": "C. Scott Franklin",
+      "address": [
+        {
+          "line1": "1517 Longworth House Office Building",
+          "city": "Washington",
+          "state": "DC",
+          "zip": "20515"
+        }
+      ],
+      "party": "Republican Party",
+      "phones": [
+        "(202) 225-1252"
+      ],
+      "urls": [
+        "https://franklin.house.gov/",
+        "https://en.wikipedia.org/wiki/Scott_Franklin_%28politician%29"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "RepFranklin"
+        },
+        {
+          "type": "Twitter",
+          "id": "RepFranklin"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "1517 Longworth House Office Building, Washington, DC 20515",
+          "featureId": {
+            "cellId": "9923602795423060423",
+            "fprint": "18411854889169102830"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 123.49476568652042,
+          "addressUnderstood": false
+        }
+      ]
+    },
+    {
+      "name": "Ron DeSantis",
+      "address": [
+        {
+          "line1": "400 South Monroe Street",
+          "city": "Tallahassee",
+          "state": "FL",
+          "zip": "32399"
+        }
+      ],
+      "party": "Republican Party",
+      "phones": [
+        "(850) 717-9337"
+      ],
+      "urls": [
+        "https://www.flgov.com/",
+        "https://en.wikipedia.org/wiki/Ron_DeSantis"
+      ],
+      "emails": [
+        "governorron.desantis@eog.myflorida.com"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "GovRonDeSantis"
+        },
+        {
+          "type": "Twitter",
+          "id": "RonDeSantisFL"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "400 S Monroe St, Tallahassee, FL 32399-0001",
+          "featureId": {
+            "cellId": "9866530745479640343",
+            "fprint": "699199402812887921"
+          },
+          "featureType": "typeGeocodedAddress",
+          "positionPrecisionMeters": 0,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Jeanette Nuñez",
+      "address": [
+        {
+          "line1": "400 South Monroe Street",
+          "city": "Tallahassee",
+          "state": "FL",
+          "zip": "32399"
+        }
+      ],
+      "party": "Republican Party",
+      "phones": [
+        "(850) 488-7146"
+      ],
+      "urls": [
+        "https://www.flgov.com/lieutenant-governor-jeanette-nunez/",
+        "https://en.wikipedia.org/wiki/Jeanette_Nu%C3%B1ez"
+      ],
+      "emails": [
+        "ltgovernorjeanette.nunez@eog.myflorida.com"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "LtGovNunez"
+        },
+        {
+          "type": "Twitter",
+          "id": "LtGovNunez"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "400 S Monroe St, Tallahassee, FL 32399-0001",
+          "featureId": {
+            "cellId": "9866530745479640343",
+            "fprint": "699199402812887921"
+          },
+          "featureType": "typeGeocodedAddress",
+          "positionPrecisionMeters": 0,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Nicole \"Nikki\" Fried",
+      "address": [
+        {
+          "line1": "400 S Monroe St",
+          "line2": "PL",
+          "city": "Tallahassee",
+          "state": "FL",
+          "zip": "32399"
+        }
+      ],
+      "party": "Democratic Party",
+      "phones": [
+        "(850) 617-7700"
+      ],
+      "urls": [
+        "https://www.fdacs.gov/",
+        "https://en.wikipedia.org/wiki/Nikki_Fried"
+      ],
+      "emails": [
+        "nikki.fried@fdacs.gov"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "FDACS"
+        },
+        {
+          "type": "Twitter",
+          "id": "FDACS"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "400 S Monroe St, PL-10, Tallahassee, FL 32399-0800",
+          "featureId": {
+            "cellId": "9866530745479640343",
+            "fprint": "9612955981136374103"
+          },
+          "featureType": "typeCompoundSection",
+          "positionPrecisionMeters": 0,
+          "addressUnderstood": false
+        }
+      ]
+    },
+    {
+      "name": "Jimmy Patronis",
+      "address": [
+        {
+          "line1": "200 East Gaines Street",
+          "city": "Tallahassee",
+          "state": "FL",
+          "zip": "32399"
+        }
+      ],
+      "party": "Republican Party",
+      "phones": [
+        "(850) 413-3100"
+      ],
+      "urls": [
+        "https://www.myfloridacfo.com/home.html",
+        "https://en.wikipedia.org/wiki/Jimmy_Patronis"
+      ],
+      "emails": [
+        "cfo.patronis@myfloridacfo.com"
+      ],
+      "channels": [
+        {
+          "type": "Twitter",
+          "id": "JimmyPatronis"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "200 East Gaines Street, Tallahassee FL 32399-0301",
+          "featureId": {
+            "cellId": "9866530699868113017",
+            "fprint": "8680657175363061133"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 44.692201601589161,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Ashley Moody",
+      "address": [
+        {
+          "line1": "400 S Monroe St",
+          "line2": "PL",
+          "city": "Tallahassee",
+          "state": "FL",
+          "zip": "32399"
+        }
+      ],
+      "party": "Republican Party",
+      "phones": [
+        "(866) 966-7226"
+      ],
+      "urls": [
+        "https://myfloridalegal.com/",
+        "https://en.wikipedia.org/wiki/Ashley_Moody"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "AshleyMoodyFL"
+        },
+        {
+          "type": "Twitter",
+          "id": "AGAshleyMoody"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "400 S Monroe St, PL-01, Tallahassee, FL 32399-1050",
+          "featureId": {
+            "cellId": "9866530745479640343",
+            "fprint": "13648307781044023025"
+          },
+          "featureType": "typeCompoundSection",
+          "positionPrecisionMeters": 0,
+          "addressUnderstood": false
+        }
+      ]
+    },
+    {
+      "name": "Alan Lawson",
+      "address": [
+        {
+          "line1": "500 South Duval Street",
+          "city": "Tallahassee",
+          "state": "FL",
+          "zip": "32399"
+        }
+      ],
+      "party": "Nonpartisan",
+      "phones": [
+        "(850) 921-1096"
+      ],
+      "urls": [
+        "https://www.floridasupremecourt.org/Justices/Justice-Alan-Lawson",
+        "https://en.wikipedia.org/wiki/C._Alan_Lawson"
+      ],
+      "emails": [
+        "publicinformation@flcourts.org"
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "500 South Duval Street, Tallahassee FL 32399-1925",
+          "featureId": {
+            "cellId": "9866530752859845277",
+            "fprint": "16174355056946266690"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 56.989556445833216,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Carlos G. Muñiz",
+      "address": [
+        {
+          "line1": "500 South Duval Street",
+          "city": "Tallahassee",
+          "state": "FL",
+          "zip": "32399"
+        }
+      ],
+      "party": "Nonpartisan",
+      "phones": [
+        "(850) 488-0007"
+      ],
+      "urls": [
+        "https://www.floridasupremecourt.org/Justices/Justice-Carlos-G.-Muniz",
+        "https://en.wikipedia.org/wiki/Carlos_G._Mu%C3%B1iz"
+      ],
+      "emails": [
+        "publicinformation@flcourts.org"
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "500 South Duval Street, Tallahassee FL 32399-1925",
+          "featureId": {
+            "cellId": "9866530752859845277",
+            "fprint": "16174355056946266690"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 56.989556445833216,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Charles T. Canady",
+      "address": [
+        {
+          "line1": "500 South Duval Street",
+          "city": "Tallahassee",
+          "state": "FL",
+          "zip": "32399"
+        }
+      ],
+      "party": "Nonpartisan",
+      "phones": [
+        "(850) 410-8092"
+      ],
+      "urls": [
+        "https://www.floridasupremecourt.org/Justices/Chief-Justice-Charles-T.-Canady",
+        "https://en.wikipedia.org/wiki/Charles_T._Canady"
+      ],
+      "emails": [
+        "publicinformation@flcourts.org"
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "500 South Duval Street, Tallahassee FL 32399-1925",
+          "featureId": {
+            "cellId": "9866530752859845277",
+            "fprint": "16174355056946266690"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 56.989556445833216,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Jamie R. Grosshans",
+      "address": [
+        {
+          "line1": "500 South Duval Street",
+          "city": "Tallahassee",
+          "state": "FL",
+          "zip": "32399"
+        }
+      ],
+      "party": "Nonpartisan",
+      "phones": [
+        "(850) 488-8421"
+      ],
+      "urls": [
+        "https://www.floridasupremecourt.org/Justices/Justice-Jamie-R.-Grosshans",
+        "https://en.wikipedia.org/wiki/Jamie_Grosshans"
+      ],
+      "emails": [
+        "publicinformation@flcourts.org"
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "500 South Duval Street, Tallahassee FL 32399-1925",
+          "featureId": {
+            "cellId": "9866530752859845277",
+            "fprint": "16174355056946266690"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 56.989556445833216,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "John D. Couriel",
+      "address": [
+        {
+          "line1": "500 South Duval Street",
+          "city": "Tallahassee",
+          "state": "FL",
+          "zip": "32399"
+        }
+      ],
+      "party": "Nonpartisan",
+      "phones": [
+        "(850) 922-5624"
+      ],
+      "urls": [
+        "https://www.floridasupremecourt.org/Justices/Justice-John-D.-Couriel",
+        "https://en.wikipedia.org/wiki/John_D._Couriel"
+      ],
+      "emails": [
+        "publicinformation@flcourts.org"
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "500 South Duval Street, Tallahassee FL 32399-1925",
+          "featureId": {
+            "cellId": "9866530752859845277",
+            "fprint": "16174355056946266690"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 56.989556445833216,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Jorge Labarga",
+      "address": [
+        {
+          "line1": "500 South Duval Street",
+          "city": "Tallahassee",
+          "state": "FL",
+          "zip": "32399"
+        }
+      ],
+      "party": "Nonpartisan",
+      "phones": [
+        "(850) 413-8371"
+      ],
+      "urls": [
+        "https://www.floridasupremecourt.org/Justices/Justice-Jorge-Labarga",
+        "https://en.wikipedia.org/wiki/Jorge_Labarga"
+      ],
+      "emails": [
+        "publicinformation@flcourts.org"
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "500 South Duval Street, Tallahassee FL 32399-1925",
+          "featureId": {
+            "cellId": "9866530752859845277",
+            "fprint": "16174355056946266690"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 56.989556445833216,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Ricky Polston",
+      "address": [
+        {
+          "line1": "500 South Duval Street",
+          "city": "Tallahassee",
+          "state": "FL",
+          "zip": "32399"
+        }
+      ],
+      "party": "Nonpartisan",
+      "phones": [
+        "(850) 488-2361"
+      ],
+      "urls": [
+        "https://www.floridasupremecourt.org/Justices/Justice-Ricky-Polston",
+        "https://en.wikipedia.org/wiki/Ricky_Polston"
+      ],
+      "emails": [
+        "publicinformation@flcourts.org"
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "500 South Duval Street, Tallahassee FL 32399-1925",
+          "featureId": {
+            "cellId": "9866530752859845277",
+            "fprint": "16174355056946266690"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 56.989556445833216,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Bob Henriquez",
+      "address": [
+        {
+          "line1": "15th Floor County Ctr",
+          "line2": "601 East Kennedy Boulevard",
+          "city": "Tampa",
+          "state": "FL",
+          "zip": "33602"
+        }
+      ],
+      "party": "Democratic Party",
+      "phones": [
+        "(813) 272-6100"
+      ],
+      "urls": [
+        "https://www.hcpafl.org/"
+      ],
+      "emails": [
+        "taxes@hillstax.org"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "231357066998868"
+        },
+        {
+          "type": "Twitter",
+          "id": "hcpafl"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "15th Floor County Ctr. 601 E. Kennedy Blvd. Tampa, Florida 33602-4932",
+          "featureId": {
+            "cellId": "9854655036930641049",
+            "fprint": "10587284163636897841"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 60.532030741458875,
+          "addressUnderstood": false
+        }
+      ]
+    },
+    {
+      "name": "Cindy Stuart",
+      "address": [
+        {
+          "line1": "800 East Twiggs Street",
+          "city": "Tampa",
+          "state": "FL",
+          "zip": "33602"
+        }
+      ],
+      "party": "Democratic Party",
+      "phones": [
+        "(813) 276-8100"
+      ],
+      "urls": [
+        "https://www.hillsclerk.com/"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "hillsclerk"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "800 Twiggs Street, Room 101, Tampa, FL 33602",
+          "featureId": {
+            "cellId": "9854655035041218821",
+            "fprint": "11706290008130666960"
+          },
+          "featureType": "typeCompoundSection",
+          "positionPrecisionMeters": 105.24851435732737,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Chad Chronister",
+      "party": "Republican Party",
+      "phones": [
+        "(813) 247-8000"
+      ],
+      "urls": [
+        "https://teamhcso.com/"
+      ],
+      "emails": [
+        "piocommandcenter@hcso.tampa.fl.us"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "HCSOSheriff"
+        },
+        {
+          "type": "Twitter",
+          "id": "hcsosheriff"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "P.O. Box 3371, Tampa, FL 33601",
+          "featureId": {
+            "cellId": "9854655039729460961",
+            "fprint": "17699255670275707078"
+          },
+          "featureType": "typePostalCode",
+          "positionPrecisionMeters": 500,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Nancy C. Millan",
+      "party": "Democratic Party",
+      "phones": [
+        "(813) 635-5200"
+      ],
+      "urls": [
+        "https://www.hillstax.org/"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "votenancymillan"
+        },
+        {
+          "type": "Twitter",
+          "id": "hillstax"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "P.O. Box 30012 Tampa, Florida 33630-3012",
+          "featureId": {
+            "cellId": "9854652625638345123",
+            "fprint": "10999843898338244501"
+          },
+          "featureType": "typePostalCode",
+          "positionPrecisionMeters": 1102.2929176923979,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Craig Latimer",
+      "address": [
+        {
+          "line1": "601 East Kennedy Boulevard",
+          "city": "Tampa",
+          "state": "FL",
+          "zip": "33602"
+        }
+      ],
+      "party": "Democratic Party",
+      "phones": [
+        "(813) 272-5850"
+      ],
+      "urls": [
+        "https://www.votehillsborough.org/"
+      ],
+      "emails": [
+        "voter@votehillsborough.gov"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "19235304112"
+        },
+        {
+          "type": "Twitter",
+          "id": "HillsboroughSOE"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "601 E. Kennedy Boulevard, 16th Floor Tampa, Florida 33602",
+          "featureId": {
+            "cellId": "9854655036928656805",
+            "fprint": "14539685224161416223"
+          },
+          "featureType": "typeCompoundSection",
+          "positionPrecisionMeters": 0,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Kimberly Overman",
+      "address": [
+        {
+          "line1": "601 East Kennedy Boulevard",
+          "city": "Tampa",
+          "state": "FL",
+          "zip": "33602"
+        }
+      ],
+      "party": "Democratic Party",
+      "phones": [
+        "(813) 272-5735"
+      ],
+      "urls": [
+        "https://www.hillsboroughcounty.org/en/government/board-of-county-commissioners"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "kovermanhcfl"
+        },
+        {
+          "type": "Twitter",
+          "id": "KOvermanHCFL"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "601 E. Kennedy Blvd. Tampa, FL 33602",
+          "featureId": {
+            "cellId": "9854655036930641049",
+            "fprint": "10587284163636897841"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 60.532030741458875,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Mariella Smith",
+      "address": [
+        {
+          "line1": "601 East Kennedy Boulevard",
+          "city": "Tampa",
+          "state": "FL",
+          "zip": "33602"
+        }
+      ],
+      "party": "Democratic Party",
+      "phones": [
+        "(813) 272-5725"
+      ],
+      "urls": [
+        "https://www.hillsboroughcounty.org/en/government/board-of-county-commissioners"
+      ],
+      "channels": [
+        {
+          "type": "Facebook",
+          "id": "MariellaSmithBOCC"
+        }
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "601 E. Kennedy Blvd. Tampa, FL 33602",
+          "featureId": {
+            "cellId": "9854655036930641049",
+            "fprint": "10587284163636897841"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 60.532030741458875,
+          "addressUnderstood": true
+        }
+      ]
+    },
+    {
+      "name": "Pat Kemp",
+      "address": [
+        {
+          "line1": "601 East Kennedy Boulevard",
+          "city": "Tampa",
+          "state": "FL",
+          "zip": "33602"
+        }
+      ],
+      "party": "Democratic Party",
+      "phones": [
+        "(813) 272-5730"
+      ],
+      "urls": [
+        "https://www.hillsboroughcounty.org/en/government/board-of-county-commissioners"
+      ],
+      "geocodingSummaries": [
+        {
+          "queryString": "601 E. Kennedy Blvd. Tampa, FL 33602",
+          "featureId": {
+            "cellId": "9854655036930641049",
+            "fprint": "10587284163636897841"
+          },
+          "featureType": "typeCompoundBuilding",
+          "positionPrecisionMeters": 60.532030741458875,
+          "addressUnderstood": true
+        }
+      ]
+    }
+  ]
+}
