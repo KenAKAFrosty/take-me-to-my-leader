@@ -137,7 +137,7 @@ function LeaderCard({ leaders, index, geoData }: { leaders: Leader[], index: num
   return (
     <>
       {leaders && geoData && geoData.county && geoData.state &&
-        <p style={{ marginBottom: 20, fontSize: 24, fontWeight: "bold", textAlign: "center" }}>
+        <p style={{ marginBottom: 20, fontSize: "calc(12px + 2vw)", fontWeight: "bold", textAlign: "center" }}>
           {geoData.county}{', '}{geoData.state}
         </p>
       }
@@ -148,7 +148,9 @@ function LeaderCard({ leaders, index, geoData }: { leaders: Leader[], index: num
           boxShadow: "0px 0px 7px rgba(0,0,0, 0.26)",
           borderRadius: 5,
           padding: 8,
-          width: 280,
+          minWidth: 280,
+          maxWidth: 390,
+          width: "80%",
           opacity: leaders ? 1 : 0,
           overflow: "hidden",
           display: "flex",
