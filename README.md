@@ -9,8 +9,8 @@
     - Because of the accuracy of geolocating from IP, it seems like less friction to focus on county instead of city - but that said, city officials are an important part of this too, so it's something to consider down the road
 4) ~~Identify the political leaders associated with city/county/state~~
 5) ~~Map those leaders to email addresses~~
-6) Generate basic templates as text "Hi, {leaderName}, I live in {county} and..."
-7) One tap to copy that template to clipboard, open link to email the proper address (with subject line too possibly?)
+6) ~~Generate basic templates as text "Hi, {leaderName}, I live in {county} and..."~~
+7) ~~One tap to copy that template to clipboard, open link to email the proper address (with subject line too possibly?)~~
 
 
 <br> 

@@ -165,9 +165,12 @@ function LeaderCard({ leaders, index, geoData }: { leaders: Leader[], index: num
 
 
 function getLeaderContent(preferredLeader: Leader, geoData: GeoData) {
+
+  const template = !preferredLeader ? null : `Hi ${preferredLeader.name},\nI'm from ${geoData.county} and my name is`;
+
   if (!preferredLeader) { return <ErrorMessage /> }
   const shadow = "0px 0px 7px rgba(0,0,0,0.44)"
-  console.log(geoData);
+
   return (
     <>
       <NamePortraitAndTitle preferredLeader={preferredLeader} />
@@ -177,23 +180,20 @@ function getLeaderContent(preferredLeader: Leader, geoData: GeoData) {
         <AddressComponent address={preferredLeader.addresses[0]} />
       }
 
-      <div style={{
-        backgroundColor: "white", padding: 4, borderRadius: 4, border: "1px solid rgba(0,0,0,0.2)",
-        marginTop: 30, marginBottom: 30
-      }}>
-        <p>
-          {`When you click 'Message Me!', the following template will load into your clipboard to start you off and keep it easy:`}
-        </p>
-        <br />
-        <i>
+      {template &&
+        <div style={{
+          backgroundColor: "white", padding: 4, borderRadius: 4, border: "1px solid rgba(0,0,0,0.2)",
+          marginTop: 30, marginBottom: 30, fontSize: 14
+        }}>
           <p>
-            {`Hi ${preferredLeader.name},`}
+            {`When you click 'Message Me!', the following template will load into your clipboard to start you off and keep it easy:`}
           </p>
-          <p>
-            {`I'm from ${geoData.county} and my name is`}
-          </p>
-        </i>
-      </div>
+          <br />
+          <i>
+            {template.split("\n").map(line => <p key={line}>{line}</p>)}
+          </i>
+        </div>
+      }
 
       <div style={{
         display: "flex", alignItems: "center", gap: "10px", marginTop: 10, marginBottom: 10,
@@ -208,7 +208,7 @@ function getLeaderContent(preferredLeader: Leader, geoData: GeoData) {
           }
         </div>
 
-        <MessageButton preferredLeader={preferredLeader} subjectLines={subjectLines} />
+        <MessageButton preferredLeader={preferredLeader} subjectLines={subjectLines} template={template} />
       </div>
 
     </>
@@ -303,7 +303,9 @@ function Twitter({ twitterUserLink }: { twitterUserLink: string }) {
   )
 }
 
-function MessageButton({ preferredLeader, subjectLines }: { preferredLeader: Leader, subjectLines?: string[] }) {
+function MessageButton({ preferredLeader, subjectLines, template }:
+  { preferredLeader: Leader, subjectLines?: string[], template: string }) {
+
   let href = `mailto:${preferredLeader.emails[0]}`
   if (subjectLines) {
     const randomIndex = Math.floor(Math.random() * subjectLines.length);
@@ -315,7 +317,11 @@ function MessageButton({ preferredLeader, subjectLines }: { preferredLeader: Lea
     <a href={href} >
       <button
         className='gradient-border'
-        onClick={() => { console.log('test') }}
+        onClick={async () => {
+          navigator.clipboard.writeText(template).then(() => {
+            //no op
+          })
+        }}
         style={{
           cursor: "pointer",
           padding: 4,
