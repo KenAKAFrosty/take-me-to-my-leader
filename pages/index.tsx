@@ -208,7 +208,7 @@ function getLeaderContent(preferredLeader: Leader, geoData: GeoData) {
           }
         </div>
 
-        <MessageButton preferredLeader={preferredLeader} subjectLines={subjectLines} template={template} />
+        <MessageButton preferredLeader={preferredLeader} subjectLines={subjectLines} template={template || ""} />
       </div>
 
     </>
