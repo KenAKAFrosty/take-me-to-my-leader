@@ -1,5 +1,6 @@
 import { GetServerSidePropsContext } from 'next';
 import Head from 'next/head'
+import { useEffect, useRef } from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import getLocationFromIp, { GeoData } from '../functions/getLocationFromIp';
@@ -131,7 +132,6 @@ function LoadingSpinnerWithMessage({ message, loading }: { message: string, load
 
 
 function LeaderCard({ leaders, index, geoData }: { leaders: Leader[], index: number, geoData: GeoData }) {
-
   const preferredLeader: Leader = leaders && leaders[index];
 
   return (
@@ -141,21 +141,22 @@ function LeaderCard({ leaders, index, geoData }: { leaders: Leader[], index: num
           {geoData.county}{', '}{geoData.state}
         </p>
       }
-      <article style={{
-        transition: "280ms ease-out",
-        backgroundColor: "rgba(0,0,0, 0.02)",
-        boxShadow: "0px 0px 7px rgba(0,0,0, 0.26)",
-        borderRadius: 5,
-        padding: 8,
-        width: 280,
-
-        opacity: leaders ? 1 : 0,
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: preferredLeader ? "flex-start" : "center",
-        alignItems: "center",
-        position: "relative"
-      }}>
+      <article
+        style={{
+          transition: "580ms ease-out",
+          backgroundColor: "rgba(0,0,0, 0.02)",
+          boxShadow: "0px 0px 7px rgba(0,0,0, 0.26)",
+          borderRadius: 5,
+          padding: 8,
+          width: 280,
+          opacity: leaders ? 1 : 0,
+          overflow: "hidden",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: preferredLeader ? "flex-start" : "center",
+          alignItems: "center",
+          position: "relative"
+        }}>
         {getLeaderContent(preferredLeader, geoData)}
       </article>
     </>
@@ -176,26 +177,40 @@ function getLeaderContent(preferredLeader: Leader, geoData: GeoData) {
         <AddressComponent address={preferredLeader.addresses[0]} />
       }
 
-
       <div style={{
-        position: "absolute", bottom: "5%", left: "5%", display: "flex", alignItems: "center", gap: "10px"
+        backgroundColor: "white", padding: 4, borderRadius: 4, border: "1px solid rgba(0,0,0,0.2)",
+        marginTop: 30, marginBottom: 30
       }}>
-
-        {preferredLeader.phones && preferredLeader.phones.length &&
-          <Phone phoneNumber={preferredLeader.phones[0]} />
-        }
-
-        {preferredLeader.twitterLink &&
-          <Twitter twitterUserLink={preferredLeader.twitterLink} />
-        }
+        <p>
+          {`When you click 'Message Me!', the following template will load into your clipboard to start you off and keep it easy:`}
+        </p>
+        <br />
+        <i>
+          <p>
+            {`Hi ${preferredLeader.name},`}
+          </p>
+          <p>
+            {`I'm from ${geoData.county} and my name is`}
+          </p>
+        </i>
       </div>
 
-      <MessageButton preferredLeader={preferredLeader} subjectLines={subjectLines} />
-      {/* 
-        Following div is a spaceholder from the phone/twitter/message button row (all using absolute position)
-        I don't like this pattern right now, has a smell. Need to refactor to proper in-flow-of-document      
-      */}
-      <div style={{ height: 70 }} /> 
+      <div style={{
+        display: "flex", alignItems: "center", gap: "10px", marginTop: 10, marginBottom: 10,
+      }}>
+        <div style={{ display: "flex", gap: "10px" }}>
+          {preferredLeader.phones && preferredLeader.phones.length &&
+            <Phone phoneNumber={preferredLeader.phones[0]} />
+          }
+
+          {preferredLeader.twitterLink &&
+            <Twitter twitterUserLink={preferredLeader.twitterLink} />
+          }
+        </div>
+
+        <MessageButton preferredLeader={preferredLeader} subjectLines={subjectLines} />
+      </div>
+
     </>
   )
 }
@@ -309,10 +324,7 @@ function MessageButton({ preferredLeader, subjectLines }: { preferredLeader: Lea
           fontSize: 24,
           fontWeight: "bold",
           fontFamily: "inherit",
-          position: "absolute",
           border: "none",
-          bottom: "5%",
-          right: "5%",
           backgroundColor: "white"
         }}>
         Message Me!
