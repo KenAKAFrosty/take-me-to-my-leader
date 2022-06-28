@@ -82,7 +82,7 @@ export type CivicApiResponse = {
 }
 
 
-type Address = {
+export type Address = {
     "locationName": string,
     "line1": string,
     "line2": string,
@@ -107,4 +107,16 @@ export type Official = {
     "emails": string[],
     "channels": Array<Channel>
     "office"?: string
+}
+
+
+export type Leader = {
+    addresses: Address[];
+    emails: string[];
+    name: string;
+    phones: string[];
+    twitterLink: string,
+    office: string,
+    party: string,
+    image: string
 }
