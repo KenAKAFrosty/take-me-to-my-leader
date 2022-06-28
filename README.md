@@ -20,4 +20,7 @@
 - Little sliding notifications out of the main viewing area for when someone else clicks their button, e.g., "Someone in Detroit, MI just contacted one of their leaders!"
 - Maybe even long term stats over time. Simple stuff just like "here's how many people in your state have used this just this week". that kind of thing
 - A "Most Contacted Officials" page
+- Option for browser notifications for reminders to do it again (in a month, etc..) Same for adding to calendar
+- Before sophisticated selection is a thing, would be a nice feature to do a little "roulette" type wheel to sorta gamify it and make it exciting to see which one you get
+- Icons/images for the state you're in
 - More to come
