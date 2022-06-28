@@ -51,3 +51,11 @@ export interface Location {
         current_time: string;
     }
 }
+
+export interface GeoData {
+  city?: string;
+  county?: string;
+  zip?: string;
+  state?: string;
+  stateCode?: string;
+}
