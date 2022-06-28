@@ -292,7 +292,7 @@ function Phone({ phoneNumber }: { phoneNumber: string }) {
 
 function Twitter({ twitterUserLink }: { twitterUserLink: string }) {
   return (
-    <a href={twitterUserLink} target="_blank">
+    <a href={twitterUserLink} target="_blank" rel="noreferrer" >
       <div style={{
         backgroundColor: "white", display: "flex", alignItems: "center", cursor: "pointer",
         paddingTop: 2, paddingBottom: 2, borderRadius: 4, boxShadow: "0px 0px 7px rgb(29, 155, 240)"
