@@ -7,6 +7,7 @@ export default async function handler(
     res: NextApiResponse
 ) {
     const zip = req.body.zip || req.query.zip;
+    console.log('zip provided', zip)
     if (!zip) {
         res.status(400).json({ error: "No zip provided" });
         return
@@ -14,10 +15,9 @@ export default async function handler(
 
     try {
         const leaders = await getPoliticalLeadersByZip(zip);
-
         res.status(200).json({ success: true, leaders })
     } catch (error: any) {
-        console.log(error.data);
+        console.log(error.response.data);
         res.status(500).json({ error: "Unknown error. Please try again." });
         return;
     }

@@ -3,11 +3,12 @@ import { GeoData } from "../getLocationFromIp";
 import fetcher from "./fetcher";
 
 export default function usePoliticalLeaders(geoData: GeoData) {
-    const {data, error} = useSWR("/api/getPoliticalLeadersByZip?zip="+geoData.zip, fetcher);
+    const { data, error, mutate } = useSWR("/api/getPoliticalLeadersByZip?zip=" + geoData.zip, fetcher);
 
-    return { 
+    return {
         leaders: data?.leaders,
         leadersError: error || data?.error,
-        leadersAreLoading: !error && !data
+        leadersAreLoading: !error && !data,
+        mutateLeaders: mutate
     }
 }
