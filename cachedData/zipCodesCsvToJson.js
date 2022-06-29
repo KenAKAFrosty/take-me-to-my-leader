@@ -11,16 +11,16 @@ async function run() {
     const rows = text.split("\n");
     const headers = rows[0].split(",");
     const zipIndex = headers.indexOf("zip");
-    const countyIndex = headers.indexOf("county");
+    const stateIndex = headers.indexOf("state");
 
     const jsonVersion = {};
 
     for (let i = 0; i< rows.length; i++) { 
         const row = rows[i].split(",");
         const zip = row[zipIndex];
-        const county = row[countyIndex];
-        jsonVersion[zip] = county;
+        const state = row[stateIndex];
+        jsonVersion[zip] = state;
     }
     console.log(Object.keys(jsonVersion).length)
-    fs.writeFileSync("./countiesByZip.json", JSON.stringify(jsonVersion));
+    fs.writeFileSync("./statesByZip.json", JSON.stringify(jsonVersion));
 }
