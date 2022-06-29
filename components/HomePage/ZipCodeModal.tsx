@@ -21,6 +21,7 @@ export default function ZipCodeModal({ updateZip, queueUpdateShowModal }:
                     Enter Zip
                 </h3>
                 <input autoFocus
+                    type="number"
                     style={{
                         borderRadius: 4,
                         height: 50,
