@@ -24,7 +24,6 @@ const subjectLines = [
   "RE: A concerned Citizen"
 ]
 
-const slogan = `The fastest way to participate in democracy`
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   const fs = require('fs');
@@ -97,12 +96,22 @@ export default function Home({ geoData }: { leaders: Official[], geoData: GeoDat
     console.log(zip)
   }
 
+  const title = "Take me to my leader 📣";
+  const slogan = `Message your elected officials as easily as you text your friends.`
+
   return (
     <div style={defaultPageContainer}>
       <Head>
-        <title>Take me to my leader 📣</title>
+        <title>{title}</title>
+        <meta property="og:title" content={title} />
+        <meta property="og:image" content={`/social-share.png`} />
         <meta name="description" content={slogan} />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:site_name" content="TakeMeToMyLeader" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta property="og:locale" content={`en_US`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="theme-color" content="#000000" />
       </Head>
 
       <Header />
