@@ -118,7 +118,9 @@ export default function Home({ geoData }: { leaders: Official[], geoData: GeoDat
       <main style={{ ...defaultMainContainer, color: "rgba(0,0,0,0.69)", }}>
         {leadersError ? <ErrorMessage /> :
           <>
-            <LoadingSpinnerWithMessage message={slogan} loading={leadersAreLoading} />
+            <LoadingSpinnerWithMessage
+              message={`The fastest way to participate in democracy`}
+              loading={leadersAreLoading} />
             <LeaderCard leaders={leaders} index={staleLeaderIndex} geoData={geoData}
               handleShuffle={handleShuffle} handleLocationEdit={handleLocationEdit} />
           </>
