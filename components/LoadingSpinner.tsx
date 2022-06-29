@@ -5,7 +5,7 @@ export default function LoadingSpinnerWithMessage({ message, loading }: { messag
         <>
             <h1 style={{
                 textAlign: "center",
-                maxWidth: 700,
+                maxWidth: 900,
                 lineHeight: 1.15,
                 marginBottom: 20,
                 fontSize: "calc(16px + 5vw)",
