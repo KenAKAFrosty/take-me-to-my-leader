@@ -1,5 +1,5 @@
 
-export default function LoadingSpinnerWithMessage({ message, loading }: { message: string, loading: boolean }) {
+export default function LoadingSpinnerWithMessage({ message, isLoading }: { message: string, isLoading: boolean }) {
 
     return (
         <>
@@ -10,8 +10,8 @@ export default function LoadingSpinnerWithMessage({ message, loading }: { messag
                 marginBottom: 20,
                 fontSize: "calc(16px + 5vw)",
                 transition: "220ms ease-in-out",
-                opacity: loading ? 1 : 0,
-                height: loading ? "auto" : 0
+                opacity: isLoading ? 1 : 0,
+                height: isLoading ? "auto" : 0
             }}>
                 {message}
             </h1>
@@ -22,8 +22,8 @@ export default function LoadingSpinnerWithMessage({ message, loading }: { messag
                 height={75}
                 width={75}
                 style={{
-                    opacity: loading ? 1 : 0,
-                    height: loading ? "auto" : 0
+                    opacity: isLoading ? 1 : 0,
+                    height: isLoading ? "auto" : 0
                 }} />
         </>
     )
