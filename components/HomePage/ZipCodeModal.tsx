@@ -1,24 +1,37 @@
+import { useState } from "react";
 import Modal from "../Modal";
 
-export default function ZipCodeModal({ updateZip, queueUpdateShowModal }:
-    { updateZip: Function, queueUpdateShowModal: Function }) {
+export default function ZipCodeModal({ updateZip, queueSetShowModal }:
+    { updateZip: Function, queueSetShowModal: Function }) {
+    const [staleIsValid, queueSetIsValid] = useState<boolean>(true)
 
     function setZipAndClose(zip: string) {
-        console.log('zip is', zip);
-        console.log('closing')
-        if (zip) { updateZip(zip) };
-        queueUpdateShowModal(false);
+        if (!zip) {
+            queueSetShowModal(false);
+            return;
+        }
+
+        queueSetIsValid(zip.length === 5);
+        if (zip.length === 5) {
+            updateZip(zip);
+            queueSetShowModal(false)
+        }
     }
 
     return (
-        <Modal >
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <Modal onBackgroundTap={() => { queueSetShowModal(false) }}>
+            <div
+                onClick={e => e.stopPropagation()}
+                style={{
+                    display: "flex", flexDirection: "column", alignItems: "center",
+                    backgroundColor: "white", padding: 16, borderRadius: 6,
+                }}>
                 <h3 style={{
                     backgroundColor: "white",
                     padding: 4,
                     borderRadius: 4,
                 }}>
-                    Enter Zip
+                    {`Enter Zip`}
                 </h3>
                 <input autoFocus
                     type="number"
@@ -49,7 +62,8 @@ export default function ZipCodeModal({ updateZip, queueUpdateShowModal }:
                         height: 50,
                         width: "fit-content",
                         fontFamily: "inherit",
-                        cursor: "pointer"
+                        cursor: "pointer",
+                        boxShadow: "0 0 7px rgba(0,0,100,0.4)"
                     }}
                     onClick={(event) => {
                         const target = event.target as HTMLButtonElement;
@@ -58,8 +72,14 @@ export default function ZipCodeModal({ updateZip, queueUpdateShowModal }:
                         const zip = input?.value;
                         setZipAndClose(zip || "");
                     }}>
-                    Update
+                    {`Update`}
                 </button>
+
+                {!staleIsValid &&
+                    <p style={{ marginTop: 10, color: "hsl(0deg, 60%, 60%)", textAlign: "center" }}>
+                        {`Error`}<br />
+                        {`Should be 5 numbers`}
+                    </p>}
             </div>
         </Modal>
     )
